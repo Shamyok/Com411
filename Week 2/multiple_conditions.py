@@ -7,5 +7,8 @@ else:
     print("Not sure which route to take")
 
 noise = input("What did I hear?")
-if noise == "grr"
 sight = input("What did I see")
+if noise =="grr" and sight =="two red eyes":
+    print("There is a scary creature. I should get out of her!")
+else:
+    print("I am a little scared but I will continue.")
