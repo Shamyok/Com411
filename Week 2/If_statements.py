@@ -46,3 +46,27 @@ elif (number1>number2):
     print("The first number is greater than the second number")
 else:
     print("The second number is greater than the first number")
+
+
+print("Please enter the first whole number")
+odd = 0
+even = 0
+wholenum = int(input())
+if (wholenum%2==0):
+    even += 1
+else:
+    odd += 1
+print("Please enter the second whole number")
+wholenum2 = int(input())
+if (wholenum2%2==0):
+    even += 1
+else:
+    odd += 1
+print("Please enter the third whole number")
+wholenum3 = int(input())
+if (wholenum3%2==0):
+    even += 1
+else:
+    odd += 1
+print(f"There was {even} even and {odd} odd numbers")
+
