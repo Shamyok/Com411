@@ -12,3 +12,4 @@ if noise =="grr" and sight =="two red eyes":
     print("There is a scary creature. I should get out of her!")
 else:
     print("I am a little scared but I will continue.")
+
