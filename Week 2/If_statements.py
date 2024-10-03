@@ -31,7 +31,18 @@ elif direction == "right":
 print("Please enter a whole number")
 number = int(input())
 
-if (number/2==0):
+if (number%2==0):
     print("The number is even")
 else:
     print("The number is odd")
+
+print("Please enter the first number")
+number1 = int(input())
+print("Please enter the second number")
+number2 = int(input())
+if (number1==number2):
+    print("The numbers are equal")
+elif (number1>number2):
+    print("The first number is greater than the second number")
+else:
+    print("The second number is greater than the first number")
