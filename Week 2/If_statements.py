@@ -27,3 +27,11 @@ elif direction == "left":
     print("I am moving to the left!")
 elif direction == "right":
     print("I am moving to the right!")
+
+print("Please enter a whole number")
+number = int(input())
+
+if (number/2==0):
+    print("The number is even")
+else:
+    print("The number is odd")
