@@ -5,3 +5,7 @@ elif adventure == "safe" or adventure == "long":
     print("Taking the safe route!")
 else:
     print("Not sure which route to take")
+
+noise = input("What did I hear?")
+if noise == "grr"
+sight = input("What did I see")
