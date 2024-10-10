@@ -15,3 +15,9 @@ steps = int(input("How far are we from the target?"))
 for loop in range(steps):
     print(f"{steps} steps remaining")
     steps -= 1
+
+i = 0
+brightness = int(input("What level of brightness is required?"))
+print("Adjusting brightness...")
+for loop in range(2,brightness+1, 2):
+    print(f"Brightness level: {'*'*loop}")
