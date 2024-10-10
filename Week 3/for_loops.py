@@ -21,3 +21,14 @@ brightness = int(input("What level of brightness is required?"))
 print("Adjusting brightness...")
 for loop in range(2,brightness+1, 2):
     print(f"Brightness level: {'*'*loop}")
+
+
+word = input("What word do you see?")
+x = len(word)
+print("Displaying index positions...")
+for loop in range(x):
+    print(word[0])
+    print(word[1])
+    print(word[2])
+    print(word[3])
+    print(word[3])
