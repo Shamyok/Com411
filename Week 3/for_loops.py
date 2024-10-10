@@ -25,10 +25,8 @@ for loop in range(2,brightness+1, 2):
 
 word = input("What word do you see?")
 x = len(word)
+i = 0
 print("Displaying index positions...")
 for loop in range(x):
-    print(word[0])
-    print(word[1])
-    print(word[2])
-    print(word[3])
-    print(word[3])
+    print (word[i])
+    i += 1
