@@ -18,3 +18,13 @@ while i <=bar:
   i +=1
 print("The battery is fully charged")
 
+phrase = (input("Please type a phrase"))
+x = len(phrase)
+print("hi "*x)
+
+print("Calculating the sum of the first 100 numbers...")
+num = 100
+sum = 0
+for i in range(num+1):
+  sum += i
+print(f"...Done! The answer is {sum}.")
