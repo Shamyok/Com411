@@ -30,3 +30,4 @@ print("Displaying index positions...")
 for loop in range(x):
     print (word[i])
     i += 1
+
