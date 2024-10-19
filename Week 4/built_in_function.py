@@ -4,3 +4,8 @@ x = len(word)
 ord (word)
 print(f"The ASCII code for t is : {ord(word)}")
 
+print("Program Started!")
+dick = input("Please enter a ASCII code")
+x = len(dick)
+abs(x)
+print(f"The character respresented by the ASCII code {dick} is : {}")
