@@ -11,3 +11,6 @@ def identify():
     else:
         print("We will be fine.")
 identify()
+
+def escape_by(plan):
+    if plan == "jumping over"
