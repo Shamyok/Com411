@@ -25,4 +25,21 @@ def menu():
 def run_task3():
     menu()
 
-run_task3()
+def menu_and_input():
+    print("Please select a direction")
+    direction_list = directions()
+    for i in range(len(direction_list)):
+        direction = direction_list[i]
+        print(f"{i}: {direction}")
+    user_input = int(input())
+    return direction_list[user_input]
+
+def run_task4():
+    route: list = []
+    print("Working out escape route...")
+    for i in range(5):
+        selected_direction = menu_and_input()
+        route.append(selected_direction)
+    print(f"Escape route: {route}")
+
+run_task4()
