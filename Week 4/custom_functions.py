@@ -67,16 +67,35 @@ def run():
     else:
         print ("Invalid option. Please choose 'sum' or 'average'.")
 
-def manipulate():
+def manipulate(word):
     response = int(input("1) Display in a box - display the word in an ASCII art box. "
           "\n2) Display Lower-case - display the word in lower-case e.g. hello "
           "\n3) Display Upper-case - display the word in upper-case e.g. HELLO "
           "\n4) Display mirrored - display the word with its mirrored word e.g. Hello | olleH "
           "\n5) Repeat - ask the user how many times to display the word and then display the word that many times alternating between upper-case and lower-case."))
 
-    if response == "1":
-        print(r"""|  _  |
-                  | |_| |
-                  |_____|""")
+    if response == 1:
+        print(rf"""|  _  |
+| {c_word} |
+|_____|""")
 
-manipulate()
+    if response == 2:
+        print(c_word.lower())
+
+    if response == 3:
+        print(c_word.upper())
+
+    if response == 4:
+        print(f"{c_word}|{c_word[::-1]}")
+
+    if response == 5:
+        repeat = int(input("How many times do you want to repeat the word"))
+        for i in range(repeat):
+            if i % 2 == 0:
+                print(word.upper())
+            else:
+                print(word.lower())
+c_word = input("Please enter a word")
+
+
+manipulate(c_word)
