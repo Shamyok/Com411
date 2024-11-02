@@ -21,6 +21,17 @@ def escape_by(plan):
         print("That might just work! Lets go!")
     else:
         print("We cannot escape that way! The boulder is in the way!")
-escape_by("jumping over")
-escape_by("running around")
-escape_by("cross bridge ahead")
+
+def cross_bridge(insteps):
+    for i in range(insteps):
+        print("Crossed step.")
+    if insteps >5:
+        print("The bridge is collapsing!")
+    else:
+        print("We must keep going!")
+
+def climb_ladder(numstepsremaining, numstepscrossed):
+    if numstepsremaining > numstepscrossed:
+        print("Still some way to go!")
+    else:
+        print("We are almost there!")
