@@ -67,4 +67,16 @@ def run():
     else:
         print ("Invalid option. Please choose 'sum' or 'average'.")
 
+def manipulate():
+    response = int(input("1) Display in a box - display the word in an ASCII art box. "
+          "\n2) Display Lower-case - display the word in lower-case e.g. hello "
+          "\n3) Display Upper-case - display the word in upper-case e.g. HELLO "
+          "\n4) Display mirrored - display the word with its mirrored word e.g. Hello | olleH "
+          "\n5) Repeat - ask the user how many times to display the word and then display the word that many times alternating between upper-case and lower-case."))
 
+    if response == "1":
+        print(r"""|  _  |
+                  | |_| |
+                  |_____|""")
+
+manipulate()
