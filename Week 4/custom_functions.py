@@ -35,3 +35,14 @@ def climb_ladder(numstepsremaining, numstepscrossed):
         print("Still some way to go!")
     else:
         print("We are almost there!")
+
+def display_ladder(steps):
+    for i in range(steps):
+        print("╬═╬")
+
+def create_ladder():
+    print("How many steps do you want?")
+    steps = int(input())
+    display_ladder(steps)
+
+create_ladder()
