@@ -45,4 +45,26 @@ def create_ladder():
     steps = int(input())
     display_ladder(steps)
 
-create_ladder()
+
+def sum_weights(charweight, invweight):
+    total_weight = charweight + invweight
+    return total_weight
+
+
+def calc_avg_weight(charweight, invweight):
+    return sum_weights(charweight, invweight) / 2
+
+
+def run():
+    weight = float(input("What is the weight of the character: "))
+    inv = float(input("What is the weight of the inventory: "))
+    cal = input("What would you like to calculate (sum or average)? ")
+
+    if cal == "sum":
+        print (sum_weights(weight, inv))
+    elif cal == "average":
+        print (calc_avg_weight(weight, inv))
+    else:
+        print ("Invalid option. Please choose 'sum' or 'average'.")
+
+
