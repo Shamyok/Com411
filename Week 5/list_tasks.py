@@ -42,4 +42,4 @@ def run_task4():
         route.append(selected_direction)
     print(f"Escape route: {route}")
 
-run_task4()
+
