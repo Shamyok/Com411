@@ -56,4 +56,27 @@ def runtask_3():
         plt.plot(x,y,"ro--")
         plt.show()
 
-runtask_3()
+
+def data():
+    paths = {}
+    line = input("Would you like the line :,-- or -")
+    color = input("What color would you like (R,G,B)?")
+    marker = input("What marker would you like (o,s or ^)")
+    paths = color,marker,line
+    return paths
+
+def generate():
+    lines = input("How many lines you would like?")
+    for i in range(int(lines)):
+        values = data()
+        x = values[0]
+        y = values[1]
+        plt.plot(values[0],values[1])
+        plt.show()
+
+def run():
+    print("Running...")
+    generate()
+    print("Done!")
+
+run()
