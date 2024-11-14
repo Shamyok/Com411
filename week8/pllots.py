@@ -32,9 +32,28 @@ def large():
     plt.ylabel("y values")
     plt.plot(x,y,"b-p")
 
-small()
-medium()
-large()
+def coordinate():
+    x = int(input("Enter the x coordinate: "))
+    y = int(input("Enter the y coordinate: "))
+    return x,y
 
-plt.show()
+def path():
+    print("Retrieving path...")
+    x_values = []
+    y_values = []
+    for i in range (4):
+        data = coordinate()
+        x_values.append(data[0])
+        y_values.append(data[1])
+    return [x_values,y_values]
 
+def runtask_3():
+        values = path()
+        x = values[0]
+        y = values[1]
+        plt.xlabel("x values")
+        plt.ylabel("y values")
+        plt.plot(x,y,"ro--")
+        plt.show()
+
+runtask_3()
