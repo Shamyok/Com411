@@ -6,8 +6,6 @@ def run_task1():
     likelihood_list = likelihood()
     print(f"Minimum likelihood of falling:{likelihood_list}%")
 
-if __name__ == "__main__":
-    run_task1()
 
 def likelihood_min_max():
     min_value = min(50,38, 27, 99, 4)
@@ -19,3 +17,11 @@ def run_task2():
     print(f"Maximum likelihood of falling:{max_likelihood}%")
 run_task2()
 
+def steps():
+    likelihoods = ("step 1", 50) ("step 2", 38) ("step 3", 27) ("step 4", 99) ("step 5", 4)
+    return likelihoods
+def run_task3():
+    steps = steps()
+    good_steps = 0
+    bad_steps = 0
+    

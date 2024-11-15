@@ -1,4 +1,5 @@
 from matplotlib import pyplot as plt
+import random
 
 def display_line(x,y):
     plt.plot(x,y)
@@ -62,16 +63,17 @@ def data():
     line = input("Would you like the line :,-- or -")
     color = input("What color would you like (R,G,B)?")
     marker = input("What marker would you like (o,s or ^)")
-    paths = color,marker,line
+    paths['line_style'] = line
+    paths['color'] = color
+    paths['marker'] = marker
     return paths
 
 def generate():
     lines = input("How many lines you would like?")
     for i in range(int(lines)):
         values = data()
-        x = values[0]
-        y = values[1]
-        plt.plot(values[0],values[1])
+        x = random.sample(range(1,20),10)
+        y = random.sample(range(1,20),10)
         plt.show()
 
 def run():
