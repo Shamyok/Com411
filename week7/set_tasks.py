@@ -7,7 +7,7 @@ def run_task1():
 
 def observed_items():
     observations = []
-    for i in range(7):
+    for i in range(5):
         item = input(f"Please enter an observation:")
         observations.append(item)
     return observations
@@ -21,4 +21,14 @@ def run_task2():
     for observation in counting:
         print(observation)
 
-run_task2()
+def removed_observations(observations):
+    input("Would you like to remove an obervation")
+    if input == "yes":
+        remove = input("What would you like to be removed")
+        observations.discard(remove)
+
+def run_task3():
+    observations = observed_items()
+    removed_observations(observations)
+
+
