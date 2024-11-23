@@ -38,5 +38,35 @@ def search(filename):
     with open(filename) as txtfile:
         for line in txtfile:
             print(f"Looked in {line.strip()}")
+    print("...Done!")
 
 search("library.txt")
+
+def search_book(filepath):
+    print("Searching...")
+    sections = ""
+    books = "Books:\n"
+
+    with open(filepath) as txtfile:
+        for line in txtfile:
+            line = line.strip()
+            if line.startswith("Section"):
+                sections += line + "\n"
+    print("Done!")
+    return f"{sections}\n\n{books}"
+
+def save(file_path, data):
+    print("Saving...")
+    with open(file_path,"w") as file:
+        file.write(data)
+    print("Done!")
+
+def run_task4():
+    input_file = "week6/books.txt"
+    output_file = "week6/section-books.txt"
+
+    data = search_book(input_file)
+    save(output_file, data)
+
+run_task4()
+
